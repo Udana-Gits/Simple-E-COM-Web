@@ -1,0 +1,151 @@
+/* General Layout */
+.admin-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  position: relative; /* For positioning the "Add User" button */
+}
+
+.admin-page h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: #007BFF;
+}
+
+/* Top Bar - Positioning the "Add User" Button */
+.top-bar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+/* Input and Button Styles */
+.admin-page input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.admin-page button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.admin-page button:hover {
+  background-color: #0056b3;
+}
+
+.admin-page button:disabled {
+  background-color: #d6d6d6;
+  cursor: not-allowed;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar .search-input {
+  width: 250px;
+}
+
+.search-bar .search-button {
+  margin-left: 10px;
+}
+
+.search-bar .view-all-button {
+  margin-left: 20px; /* Added margin for spacing */
+}
+
+/* Sort Buttons */
+.sort-buttons {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.sort-buttons button {
+  flex: 1;
+  max-width: 200px;
+}
+
+/* Product List */
+.product-list {
+  margin-top: 30px;
+}
+
+.product-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-list li {
+  background-color: #ffffff;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-list li span {
+  font-weight: bold;
+}
+
+/* Chart Section */
+.chart-container {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.chart-container canvas {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .admin-page input[type="text"] {
+    width: 100%;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .search-bar .view-all-button {
+    margin-left: 0;
+  }
+
+  .sort-buttons {
+    flex-direction: column;
+  }
+
+  .sort-buttons button {
+    max-width: 100%;
+  }
+
+  .chart-container canvas {
+    width: 100%;
+    max-width: none;
+  }
+}

@@ -1,0 +1,30 @@
+/* Calculate.css */
+.calculate-page {
+    padding: 20px;
+  }
+  
+  .category-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .category-buttons button {
+    padding: 10px 20px;
+    background-color: #007bb5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .category-buttons button:hover {
+    background-color: #005f7a;
+  }
+  
+  .total-value {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  

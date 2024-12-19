@@ -1,0 +1,64 @@
+/* Visualization.css */
+.visualization-page {
+    padding: 20px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  
+  .report-button,
+  .calculate-button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .report-button:hover,
+  .calculate-button:hover {
+    background-color: #45a049;
+  }
+  
+  .canvas-container {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .chart-select {
+    padding: 5px 10px;
+    margin-bottom: 10px;
+  }
+  
+  .chart-button {
+    padding: 10px 20px;
+    background-color: #008cba;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .chart-button:hover {
+    background-color: #007bb5;
+  }
+  
+  /* Add styles to make the chart smaller */
+  .chart-wrapper {
+    width: 60%; /* Adjust to desired width */
+    height: 300px; /* Adjust to desired height */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #inventoryChart {
+    width: 100% !important; /* Ensure chart takes up full width of the container */
+    height: 100% !important; /* Ensure chart takes up full height of the container */
+  }
+  
